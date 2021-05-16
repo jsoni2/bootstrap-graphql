@@ -12,7 +12,7 @@ import java.util.List;
  */
 
 @Service
-public class LocationServiceImpl implements LocationService{
+public class LocationServiceImpl implements LocationService {
 
     @Autowired
     LocationRepository locationRepository;
