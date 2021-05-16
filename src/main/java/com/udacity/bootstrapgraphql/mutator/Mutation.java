@@ -40,6 +40,7 @@ public class Mutation implements GraphQLMutationResolver {
             Location location = optionalLocation.get();
             location.setName(newName);
             locationRepository.save(location);
+            return location;
         } else {
             throw new LocationNotFoundException("Location Not Found", id);
         }
